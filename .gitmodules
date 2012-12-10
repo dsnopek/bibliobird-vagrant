@@ -1,0 +1,12 @@
+[submodule "modules/apt"]
+	path = modules/apt
+	url = git://git.koumbit.net/puppet-apt.git
+[submodule "modules/drush"]
+	path = modules/drush
+	url = http://git.drupal.org/project/puppet-drush.git
+[submodule "modules/common"]
+	path = modules/common
+	url = git://labs.riseup.net/shared-common
+[submodule "modules/aegir"]
+	path = modules/aegir
+	url = http://git.drupal.org/project/puppet-aegir.git
