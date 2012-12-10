@@ -1,6 +1,7 @@
 
 # Some Aegir overrides:
 $aegir_hostmaster_url = 'hostmaster.bibliobird-vm.dev'
+$aegir_email = 'aegir@example.com'
 #$aegir_force_login_link = true
 
 Exec {
@@ -12,9 +13,10 @@ import "modules.pp"
 include aegir
 include aegir::queue_runner
 
-#aegir::platform {'Open_Atrium':
-#  makefile => 'http://drupalcode.org/project/openatria_makefiles.git/blob_plain/refs/heads/master:/stub-openatrium.make',
-#}
+# Drupal 7 version of Bibliobird
+aegir::platform {'bibliobird-master':
+  makefile => 'https://raw.github.com/dsnopek/bibliobird/master/build-bibliobird.make',
+}
 
 # Example:
 #
