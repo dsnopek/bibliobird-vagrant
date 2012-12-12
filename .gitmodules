@@ -9,7 +9,7 @@
 	url = git://labs.riseup.net/shared-common
 [submodule "modules/aegir"]
 	path = modules/aegir
-	url = http://git.drupal.org/project/puppet-aegir.git
+	url = git://github.com/dsnopek/puppet-aegir.git
 [submodule "modules/stdlib"]
 	path = modules/stdlib
 	url = git://github.com/puppetlabs/puppetlabs-stdlib.git
@@ -19,3 +19,9 @@
 [submodule "modules/backup"]
 	path = modules/backup
 	url = git://github.com/dsnopek/puppet-backup.git
+[submodule "modules/vcsrepo"]
+	path = modules/vcsrepo
+	url = git://github.com/puppetlabs/puppetlabs-vcsrepo.git
+[submodule "modules/bibliobird"]
+	path = modules/bibliobird
+	url = git://github.com/dsnopek/puppet-bibliobird.git

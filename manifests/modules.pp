@@ -6,4 +6,5 @@ import "mysql"
 import "backup"
 import "drush"
 import "aegir"
+import "bibliobird"
 
