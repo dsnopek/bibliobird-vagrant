@@ -1,4 +1,6 @@
 
+import "modules.pp"
+
 # Some Aegir overrides:
 $aegir_hostmaster_url = 'hostmaster.bibliobird-vm.dev'
 $aegir_email = 'aegir@example.com'
@@ -7,8 +9,6 @@ $aegir_email = 'aegir@example.com'
 Exec {
   path => '/usr/bin:/bin',
 }
-
-import "modules.pp"
 
 include aegir
 include aegir::queue_runner
