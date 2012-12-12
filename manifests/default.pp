@@ -10,5 +10,10 @@ Exec {
   path => '/usr/bin:/bin',
 }
 
+include aegir
+include aegir::queue_runner
+
 include bibliobird
+include bibliobird::nlp
+include bibliobird::devtools
 
