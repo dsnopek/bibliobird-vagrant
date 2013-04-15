@@ -1,0 +1,20 @@
+
+ * Look into having aegir run in /vagrant and as the 'vagrant' user (to ease development)
+
+ * Copy /etc/skel/.* to /var/aegir - gives us color terminal and some other things
+
+ * Setup vim with vim-gtk so that we can leverage copy-and-paste
+   o Actually, it'd be pretty cool to make a VIM package that had copy-and-paste but no other X integration
+     but I don't know if that's possible..
+
+ * Get our Drush 4.6 hosted somewhere
+   o Put APT repo on S3:
+     - http://xn.pinkhamster.net/blog/tech/host-a-debian-repository-on-s3.html
+   o Figure out how to hold source in Git
+     - Fork this guy: http://anonscm.debian.org/gitweb/?p=collab-maint/drush.git;a=tree
+   o Get our puppet modules installing (and pinning) this package
+ 
+ * How to deal with running drush (sometimes) as the www-data user?
+   o http://randyfay.com/content/drush-file-permissions-web-servers-and-coming-armageddon
+   o Example: sudo -u www-data drush en ...
+
